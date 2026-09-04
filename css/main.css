@@ -1227,6 +1227,11 @@ body.is-leaving { animation: pageFadeOut 0.25s ease forwards; }
 .mat-breadcrumb a:hover { color: rgba(255,255,255,0.85); }
 .mat-breadcrumb-sep { color: rgba(255,255,255,0.2); }
 
+@media (min-width: 769px) {
+  .mat-breadcrumb { font-size: 14px; }
+  .page-hero-eyebrow { font-size: 15px; }
+}
+
 /* Intro 2-col */
 .mat-intro {
   padding: 80px 64px;
