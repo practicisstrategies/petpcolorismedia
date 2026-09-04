@@ -120,6 +120,21 @@ a { text-decoration: none; color: inherit; }
   background: var(--indigo); color: var(--white) !important;
 }
 
+/* ── LANGUAGE SWITCHER ────────────────────────────────── */
+.nav-lang-switch {
+  font-size: 12px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase;
+  color: rgba(255,255,255,0.55); border: 1px solid rgba(255,255,255,0.22);
+  border-radius: 100px; padding: 7px 16px; transition: all .2s; white-space: nowrap;
+}
+.nav-lang-switch:hover { color: var(--white); border-color: rgba(255,255,255,0.5); background: rgba(255,255,255,0.06); }
+.nav-drawer .nav-lang-switch {
+  display: inline-block; align-self: flex-start;
+  font-size: 12px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase;
+  color: rgba(255,255,255,0.55); border: 1px solid rgba(255,255,255,0.22);
+  border-radius: 100px; padding: 7px 16px; margin-bottom: 12px;
+}
+.nav-drawer .nav-lang-switch:hover { color: var(--white); border-color: rgba(255,255,255,0.5); }
+
 /* ── NAV DROPDOWNS (desktop) ──────────────────────────── */
 .nav-item {
   position: relative;
