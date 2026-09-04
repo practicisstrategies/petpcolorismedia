@@ -67,9 +67,25 @@ if (contactForm) {
     const qty = val('contact-qty');
     const desc = val('contact-desc');
 
-    const subject = `Demande de soumission — ${name}${company ? ' (' + company + ')' : ''}`;
+    const isEn = document.documentElement.lang === 'en';
 
-    const bodyLines = [
+    const subject = isEn
+      ? `Quote Request — ${name}${company ? ' (' + company + ')' : ''}`
+      : `Demande de soumission — ${name}${company ? ' (' + company + ')' : ''}`;
+
+    const bodyLines = isEn ? [
+      `Name: ${name}`,
+      company && `Company: ${company}`,
+      `Email: ${email}`,
+      phone && `Phone: ${phone}`,
+      `Material: ${materialLabel}`,
+      qty && `Thickness / quantity: ${qty}`,
+      '',
+      'Project description:',
+      desc,
+      '',
+      "Don't forget to attach your DXF, PDF, or AI files to this email before sending."
+    ].filter(Boolean).join('\n') : [
       `Nom : ${name}`,
       company && `Entreprise : ${company}`,
       `Courriel : ${email}`,

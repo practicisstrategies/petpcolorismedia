@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design Guide — P&P Colorismédia</title>
+<meta name="description" content="Design guide for laser cutting insulating materials. File formats, design rules, compatible thicknesses, and ordering process.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="../img/rgb_P&PLOGOS-bleu.png">
+<link rel="apple-touch-icon" href="../img/rgb_P&PLOGOS-bleu.png">
+<link rel="manifest" href="../site.webmanifest">
+<meta name="theme-color" content="#3440C4">
+<link rel="preload" as="image" href="../img/lasercut-industry.jpeg" fetchpriority="high">
+<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<nav class="site-nav">
+  <a class="nav-logo" href="index.html">
+    <img src="../img/rgb_P&PLOGOS-bleu.png" alt="P&P Colorismédia logo">
+    <div>
+      <span class="nav-logo-text">P&amp;P 2009 COLORISMEDIA Inc.</span>
+      <span class="nav-logo-sub">Specialized Cutting Service</span>
+    </div>
+  </a>
+  <div class="nav-links">
+    <div class="nav-item">
+    <a href="services.html">Services <span class="nav-chevron">▾</span></a>
+    <div class="nav-dropdown">
+      <a href="services.html">Die-Cutting</a>
+      <a href="services.html">CNC Cutting</a>
+      <a href="services.html">Laser Cutting</a>
+    </div>
+  </div>
+    <div class="nav-item">
+    <a href="materiaux.html">Materials <span class="nav-chevron">▾</span></a>
+    <div class="nav-dropdown">
+      <a href="nomex.html">Nomex 410</a>
+      <a href="hitex.html">Hitex 020 Grey</a>
+      <a href="neoprene.html">Neoprene</a>
+      <a href="silicone.html">Silicone</a>
+      <div class="nav-dropdown-sep"></div>
+      <a href="materiaux.html" class="nav-dropdown-all">View all materials →</a>
+    </div>
+  </div>
+    <div class="nav-item">
+    <a href="industries.html">Industries <span class="nav-chevron">▾</span></a>
+    <div class="nav-dropdown nav-dropdown-industries">
+      <a href="transformateurs.html">Transformers &amp; Inductors</a>
+      <a href="moteurs-electriques.html">Electric Motors</a>
+      <a href="electronique-puissance.html">Power Electronics</a>
+      <a href="vehicules-electriques.html">Electric Vehicles</a>
+      <a href="tableaux-electriques.html">Electrical Panels</a>
+      <a href="eclairage-led.html">LED Lighting</a>
+      <a href="aeronautique.html">Aerospace &amp; Defense</a>
+      <div class="nav-dropdown-sep"></div>
+      <a href="industries.html" class="nav-dropdown-all">View all industries →</a>
+    </div>
+  </div>
+    <a href="nomex.html">Nomex Advantages</a>
+    <a href="guide.html" class="active" aria-current="page">Design Guide</a>
+    <a href="a-propos.html">About</a>
+    <a href="../guide.html" class="nav-lang-switch">FR</a>
+    <a href="contact.html" class="nav-cta">Request a Quote →</a>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="nav-drawer" id="nav-drawer">
+  <div class="drawer-item">
+    <a href="services.html">Services</a>
+    <button class="drawer-toggle-btn" data-sub="sub-services" aria-label="View services">▾</button>
+  </div>
+  <div class="drawer-sub-links" id="sub-services">
+    <a href="services.html">Die-Cutting</a>
+    <a href="services.html">CNC Cutting</a>
+    <a href="services.html">Laser Cutting</a>
+  </div>
+  <div class="drawer-item">
+    <a href="materiaux.html">Materials</a>
+    <button class="drawer-toggle-btn" data-sub="sub-materiaux" aria-label="View materials">▾</button>
+  </div>
+  <div class="drawer-sub-links" id="sub-materiaux">
+    <a href="nomex.html">Nomex 410</a>
+    <a href="hitex.html">Hitex 020 Grey</a>
+    <a href="neoprene.html">Neoprene</a>
+    <a href="silicone.html">Silicone</a>
+    <a href="fishpaper.html">Fishpaper</a>
+    <a href="mylar.html">Mylar®</a>
+    <a href="kapton.html">Kapton®</a>
+    <a href="lexan.html">Lexan®</a>
+    <a href="formex.html">Formex®</a>
+    <a href="tpu.html">TPU</a>
+    <a href="materiaux.html" class="drawer-sub-all">View all materials →</a>
+  </div>
+    <div class="drawer-item">
+    <a href="industries.html">Industries</a>
+    <button class="drawer-toggle-btn" data-sub="sub-industries" aria-label="View industries">▾</button>
+  </div>
+  <div class="drawer-sub-links" id="sub-industries">
+    <a href="transformateurs.html">Transformers &amp; Inductors</a>
+    <a href="moteurs-electriques.html">Electric Motors</a>
+    <a href="electronique-puissance.html">Power Electronics</a>
+    <a href="vehicules-electriques.html">Electric Vehicles</a>
+    <a href="tableaux-electriques.html">Electrical Panels</a>
+    <a href="eclairage-led.html">LED Lighting</a>
+    <a href="aeronautique.html">Aerospace &amp; Defense</a>
+    <a href="industries.html" class="drawer-sub-all">View all industries →</a>
+  </div>
+  <a href="nomex.html">Nomex Advantages</a>
+  <a href="guide.html" class="active" aria-current="page">Design Guide</a>
+  <a href="a-propos.html">About</a>
+  <a href="../guide.html" class="nav-lang-switch">FR</a>
+    <a href="contact.html" class="nav-cta">Request a Quote →</a>
+</div>
+
+<!-- ── HERO ─────────────────────────────────────────────── -->
+<section class="page-hero">
+  <div class="page-hero-eyebrow">Design Guide</div>
+  <h1>Design your parts for specialized cutting <span class="accent">with confidence.</span></h1>
+  <p class="page-hero-sub">File formats, design rules, compatible thicknesses, and common mistakes to avoid — everything needed to send a cut-ready file.</p>
+</section>
+
+<!-- ── STATS BAND ────────────────────────────────────────── -->
+<div class="stats">
+  <div class="stat-item">
+    <span class="stat-number">±0.1 mm</span>
+    <span class="stat-label">Standard tolerance</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-number">0.05–6 mm</span>
+    <span class="stat-label">Thickness range</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-number">PDF · DXF · AI · EPS</span>
+    <span class="stat-label">Accepted formats</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-number">24 h</span>
+    <span class="stat-label">Guaranteed quote turnaround</span>
+  </div>
+</div>
+
+<!-- ── ACCEPTED FORMATS ──────────────────────────────────── -->
+<section class="formats">
+  <div class="formats-left">
+    <div class="section-eyebrow" data-reveal>Files</div>
+    <h2 class="section-title" data-reveal data-reveal-delay="1">Accepted<br>formats.</h2>
+    <div class="formats-tags" data-reveal data-reveal-delay="2">
+      <span class="format-tag highlight">DXF</span>
+      <span class="format-tag highlight">PDF</span>
+      <span class="format-tag highlight">AI</span>
+      <span class="format-tag highlight">EPS</span>
+      <span class="format-tag">DWG</span>
+      <span class="format-tag">SVG</span>
+      <span class="format-tag">CDR</span>
+    </div>
+  </div>
+  <div class="formats-right" data-reveal data-reveal-delay="2">
+    <p style="font-size:15px;color:var(--grey);line-height:1.75;font-weight:300;margin-bottom:24px;">We work exclusively with <strong style="color:var(--black);font-weight:600;">vector files</strong>. Raster images (JPG, PNG, BMP) cannot be used directly for laser cutting.</p>
+    <div class="formats-rules">
+      <div class="format-rule">
+        <span class="rule-dot"></span>
+        <span><strong>Closed contours</strong> — All cut paths must form closed loops. An open path results in an incomplete cut.</span>
+      </div>
+      <div class="format-rule">
+        <span class="rule-dot"></span>
+        <span><strong>1:1 scale</strong> — Always send your file at actual size. Specify the units used (mm or inches) in your message.</span>
+      </div>
+      <div class="format-rule">
+        <span class="rule-dot"></span>
+        <span><strong>Separate layers</strong> — Keep cut lines, engraving, and construction geometry on separate layers.</span>
+      </div>
+      <div class="format-rule">
+        <span class="rule-dot"></span>
+        <span><strong>No stray geometry</strong> — Remove construction lines, stray points, and duplicate paths before sending.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── DESIGN RULES ──────────────────────────────────── -->
+<section class="guide-rules">
+  <div class="section-eyebrow" data-reveal>Design Rules</div>
+  <h2 class="section-title" data-reveal data-reveal-delay="1">Six rules for a successful cut, first time.</h2>
+  <div class="guide-rules-grid">
+
+    <div class="guide-rule-card" data-reveal data-reveal-delay="1">
+      <div class="guide-rule-icon">
+        <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+      </div>
+      <div class="guide-rule-eyebrow">Format</div>
+      <div class="guide-rule-spec">Vector</div>
+      <div class="guide-rule-title">Vector files only</div>
+      <p class="guide-rule-desc">Send your files in PDF, DXF, AI, EPS, or DWG. Raster images (JPG, PNG) cannot be cut directly — all outlines must be vector paths.</p>
+    </div>
+
+    <div class="guide-rule-card" data-reveal data-reveal-delay="2">
+      <div class="guide-rule-icon">
+        <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><line x1="5" y1="8" x2="19" y2="8"/><line x1="5" y1="16" x2="19" y2="16"/></svg>
+      </div>
+      <div class="guide-rule-eyebrow">Bridges &amp; Ribs</div>
+      <div class="guide-rule-spec">≥ 0.8 mm</div>
+      <div class="guide-rule-title">Minimum bridge width</div>
+      <p class="guide-rule-desc">Any bridge, rib, or wall between two cuts must measure at least 0.8 mm. Below that value, fragile parts risk warping or breaking during removal.</p>
+    </div>
+
+    <div class="guide-rule-card" data-reveal data-reveal-delay="3">
+      <div class="guide-rule-icon">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>
+      </div>
+      <div class="guide-rule-eyebrow">Holes &amp; Piercings</div>
+      <div class="guide-rule-spec">≥ thickness</div>
+      <div class="guide-rule-title">Minimum hole diameter</div>
+      <p class="guide-rule-desc">A hole's diameter must be at least equal to the material thickness, with an absolute minimum of 0.5 mm. Holes that are too small cannot be cut cleanly and risk burning.</p>
+    </div>
+
+    <div class="guide-rule-card" data-reveal data-reveal-delay="1">
+      <div class="guide-rule-icon">
+        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+      </div>
+      <div class="guide-rule-eyebrow">Margins</div>
+      <div class="guide-rule-spec">≥ 3 mm</div>
+      <div class="guide-rule-title">Margin from the edges</div>
+      <p class="guide-rule-desc">Keep a margin of at least 3 mm between the edge of your part and the edges of the material sheet. Cuts too close to the edge can produce irregularities or burning.</p>
+    </div>
+
+    <div class="guide-rule-card" data-reveal data-reveal-delay="2">
+      <div class="guide-rule-icon">
+        <svg viewBox="0 0 24 24"><polyline points="4 7 4 4 20 4 20 7"/><line x1="9" y1="20" x2="15" y2="20"/><line x1="12" y1="4" x2="12" y2="20"/></svg>
+      </div>
+      <div class="guide-rule-eyebrow">Text &amp; Engraving</div>
+      <div class="guide-rule-spec">≥ 3 mm</div>
+      <div class="guide-rule-title">Minimum character height</div>
+      <p class="guide-rule-desc">For legible engraving or marking, use a minimum height of 3 mm per character. Avoid light or very thin fonts whose strokes would be under 0.3 mm.</p>
+    </div>
+
+    <div class="guide-rule-card" data-reveal data-reveal-delay="3">
+      <div class="guide-rule-icon">
+        <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+      </div>
+      <div class="guide-rule-eyebrow">Scale</div>
+      <div class="guide-rule-spec">1:1</div>
+      <div class="guide-rule-title">Actual-scale file</div>
+      <p class="guide-rule-desc">Always send your file at 1:1 scale (actual size). Specify the units (mm or inches). An incorrectly scaled file is the most frequent and costly source of error.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── COMPATIBLE THICKNESSES ────────────────────────────── -->
+<section class="guide-table-section">
+  <div class="section-eyebrow" data-reveal>Material Compatibility</div>
+  <h2 class="section-title" data-reveal data-reveal-delay="1">Available thicknesses by material.</h2>
+  <p style="font-size:15px;color:var(--muted);font-weight:300;line-height:1.75;max-width:600px;margin-top:16px;" data-reveal data-reveal-delay="2">These ranges cover the most common configurations. For a thickness outside the range or a material not listed, contact us — we can often source custom.</p>
+  <div class="guide-table-wrap" data-reveal data-reveal-delay="3">
+    <table class="guide-table">
+      <thead>
+        <tr>
+          <th>Material</th>
+          <th>Min. thickness</th>
+          <th>Max. thickness</th>
+          <th>Typical application</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            Nomex 410
+            <a href="nomex.html" style="display:block;font-size:11px;color:var(--indigo);margin-top:4px;font-weight:500;">View datasheet →</a>
+          </td>
+          <td><span class="guide-table-tag">0.05 mm</span></td>
+          <td><span class="guide-table-tag">1.5 mm</span></td>
+          <td>Thin gaskets, high-voltage electrical insulation, arc barriers</td>
+        </tr>
+        <tr>
+          <td>
+            Hitex 020 Grey
+            <a href="hitex.html" style="display:block;font-size:11px;color:var(--indigo);margin-top:4px;font-weight:500;">View datasheet →</a>
+          </td>
+          <td><span class="guide-table-tag">0.5 mm</span></td>
+          <td><span class="guide-table-tag">3 mm</span></td>
+          <td>Rigid insulating plates, spacers, precision parts</td>
+        </tr>
+        <tr>
+          <td>
+            Neoprene CloseCells
+            <a href="neoprene.html" style="display:block;font-size:11px;color:var(--indigo);margin-top:4px;font-weight:500;">View datasheet →</a>
+          </td>
+          <td><span class="guide-table-tag">1 mm</span></td>
+          <td><span class="guide-table-tag">6 mm</span></td>
+          <td>Seals, gaskets, vibration dampers</td>
+        </tr>
+        <tr>
+          <td>
+            High-Temperature Silicone
+            <a href="silicone.html" style="display:block;font-size:11px;color:var(--indigo);margin-top:4px;font-weight:500;">View datasheet →</a>
+          </td>
+          <td><span class="guide-table-tag">0.5 mm</span></td>
+          <td><span class="guide-table-tag">6 mm</span></td>
+          <td>Flexible insulators, high-temperature gaskets, flexible parts</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ── ORDERING PROCESS ─────────────────────────────── -->
+<section class="process">
+  <div class="section-header">
+    <div>
+      <div class="section-eyebrow" data-reveal>Process</div>
+      <h2 class="section-title" data-reveal data-reveal-delay="1">From your file to the delivered part.</h2>
+    </div>
+    <p class="section-header-right" data-reveal data-reveal-delay="2">No minimum order, no hidden tooling costs. Prototypes and short runs alike, we handle both.</p>
+  </div>
+  <div class="process-steps">
+    <div class="process-step" data-reveal data-reveal-delay="1">
+      <div class="step-num">01</div>
+      <div class="step-title">Prepare Your File</div>
+      <p class="step-desc">Vector file (PDF, DXF, AI, EPS), 1:1 scale, closed contours. Indicate the desired material, thickness, and quantity.</p>
+    </div>
+    <div class="process-step" data-reveal data-reveal-delay="2">
+      <div class="step-num">02</div>
+      <div class="step-title">Send Your Order</div>
+      <p class="step-desc">Via our contact form or by email to <a href="mailto:petp@bellnet.ca" style="color:var(--indigo);">petp@bellnet.ca</a>. Prototypes and short runs accepted with no minimum.</p>
+    </div>
+    <div class="process-step" data-reveal data-reveal-delay="3">
+      <div class="step-num">03</div>
+      <div class="step-title">Receive Your Quote</div>
+      <p class="step-desc">Response within 24 business hours. Transparent pricing, no hidden fees. We verify your file's cuttability before production.</p>
+    </div>
+    <div class="process-step" data-reveal data-reveal-delay="4">
+      <div class="step-num">04</div>
+      <div class="step-title">Production &amp; Delivery</div>
+      <p class="step-desc">Precision laser cutting, quality control, careful packaging. Shipped from Montreal — fast turnaround, reliable delivery across Canada.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── DO / DON'T ─────────────────────────────────── -->
+<section class="guide-dodonts">
+  <div class="section-eyebrow" data-reveal>Summary</div>
+  <h2 class="section-title" data-reveal data-reveal-delay="1">Checklist before sending your file.</h2>
+  <div class="guide-dodonts-grid">
+
+    <div class="guide-dodonts-col do" data-reveal data-reveal-delay="1">
+      <div class="guide-dodonts-heading">
+        <span class="guide-dodonts-dot"></span>
+        Do
+      </div>
+      <ul class="guide-dodonts-list">
+        <li class="guide-dodonts-item">
+          <span class="guide-dodonts-marker">✓</span>
+          Vector files — PDF, DXF, AI, EPS, or DWG
+        </li>
+        <li class="guide-dodonts-item">
+          <span class="guide-dodonts-marker">✓</span>
+          Closed contours and clean paths, no floating points
+        </li>
+        <li class="guide-dodonts-item">
+          <span class="guide-dodonts-marker">✓</span>
+          1:1 scale with clearly specified units (mm or in)
+        </li>
+        <li class="guide-dodonts-item">
+          <span class="guide-dodonts-marker">✓</span>
+          Separate layers for cut lines, engraving, and construction
+        </li>
+        <li class="guide-dodonts-item">
+          <span class="guide-dodonts-marker">✓</span>
+          Bridges ≥ 0.8 mm and holes ≥ material thickness
+        </li>
+        <li class="guide-dodonts-item">
+          <span class="guide-dodonts-marker">✓</span>
+          Margin ≥ 3 mm from the sheet edges
+        </li>
+        <li class="guide-dodonts-item">
+          <span class="guide-dodonts-marker">✓</span>
+          Specify the material, thickness, and desired quantity
+        </li>
+      </ul>
+    </div>
+
+    <div class="guide-dodonts-col dont" data-reveal data-reveal-delay="2">
+      <div class="guide-dodonts-heading">
+        <span class="guide-dodonts-dot"></span>
+        Don't
+      </div>
+      <ul class="guide-dodonts-list">
+        <li class="guide-dodonts-item">
+          <span class="guide-dodonts-marker">✕</span>
+          Raster images — JPG, PNG, BMP, TIFF not accepted as cut paths
+        </li>
+        <li class="guide-dodonts-item">
+          <span class="guide-dodonts-marker">✕</span>
+          Double or overlapping lines — they produce duplicate laser passes
+        </li>
+        <li class="guide-dodonts-item">
+          <span class="guide-dodonts-marker">✕</span>
+          Construction geometry not removed from the final file
+        </li>
+        <li class="guide-dodonts-item">
+          <span class="guide-dodonts-marker">✕</span>
+          Holes smaller than 0.5 mm or than the material thickness
+        </li>
+        <li class="guide-dodonts-item">
+          <span class="guide-dodonts-marker">✕</span>
+          Margin under 3 mm from the sheet edges
+        </li>
+        <li class="guide-dodonts-item">
+          <span class="guide-dodonts-marker">✕</span>
+          File with no indication of units or scale
+        </li>
+        <li class="guide-dodonts-item">
+          <span class="guide-dodonts-marker">✕</span>
+          Open contours — an unclosed path results in an incomplete cut
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── CTA BAND ────────────────────────────────────────────── -->
+<div class="cta-band">
+  <div>
+    <h2>Is your file ready? Send us your order.</h2>
+    <p>Free quote within 24 h, no minimum order, fast turnaround from Montreal.</p>
+  </div>
+  <a href="contact.html" class="btn-primary">Request a Free Quote</a>
+</div>
+
+<!-- ── FOOTER ─────────────────────────────────────────────── -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo-link">
+        <img src="../img/rgb_P&PLOGOS-bleu.png" alt="P&P Colorismédia logo" loading="lazy">
+        <div>
+          <span class="footer-logo-text">P&amp;P 2009 COLORISMEDIA Inc.</span>
+          <span class="footer-logo-sub">Specialized Cutting Service</span>
+        </div>
+      </a>
+      <p class="footer-tagline">Specialized cutting services for industrial insulation — Montreal, Quebec, since 2009.</p>
+      <div class="footer-contact">
+        <a href="tel:5149393369">514 939-3369</a>
+        <a href="mailto:petp@bellnet.ca">petp@bellnet.ca</a>
+        <span style="font-size:12px;color:rgba(255,255,255,0.25);">Montreal, QC H2N 1H7</span>
+      </div>
+    </div>
+    <div class="footer-nav">
+      <div class="footer-col">
+        <strong>Navigation</strong>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="materiaux.html">Materials</a>
+    <a href="industries.html">Industries</a>
+        <a href="nomex.html">Nomex Advantages</a>
+        <a href="guide.html">Design Guide</a>
+        <a href="a-propos.html">About</a>
+      </div>
+
+      <div class="footer-col">
+        <strong>Industries</strong>
+        <a href="transformateurs.html">Transformers</a>
+        <a href="moteurs-electriques.html">Electric Motors</a>
+        <a href="electronique-puissance.html">Power Electronics</a>
+        <a href="vehicules-electriques.html">Electric Vehicles</a>
+        <a href="tableaux-electriques.html">Electrical Panels</a>
+        <a href="eclairage-led.html">LED Lighting</a>
+        <a href="aeronautique.html">Aerospace</a>
+      </div>
+      <div class="footer-col">
+        <strong>Contact</strong>
+        <a href="contact.html">Request a Quote</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Colorismédia. All rights reserved.</span>
+    <div class="footer-legal">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-use.html">Terms of Use</a>
+    </div>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>
