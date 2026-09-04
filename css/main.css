@@ -294,7 +294,7 @@ a { text-decoration: none; color: inherit; }
   width: 4px; background: var(--indigo);
 }
 .page-hero-eyebrow {
-  font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
+  font-size: 13px; letter-spacing: 2px; text-transform: uppercase;
   color: var(--indigo-lt); margin-bottom: 16px; font-weight: 500;
 }
 .page-hero h1 {
