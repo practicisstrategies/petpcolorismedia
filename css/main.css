@@ -59,6 +59,7 @@ a { text-decoration: none; color: inherit; }
   font-family: 'Space Grotesk', sans-serif;
   font-size: 15px; letter-spacing: 0.3px; font-weight: 700;
   color: var(--white); line-height: 1.2;
+  -webkit-text-stroke: 0.4px currentColor;
 }
 .nav-logo-sub {
   font-size: 11px; font-weight: 500; letter-spacing: 0.5px;
@@ -708,6 +709,7 @@ a { text-decoration: none; color: inherit; }
 .footer-logo-text {
   font-family: 'Space Grotesk', sans-serif; font-size: 13px; font-weight: 700;
   color: var(--white); line-height: 1.2;
+  -webkit-text-stroke: 0.4px currentColor;
 }
 .footer-logo-sub {
   font-size: 9px; font-weight: 400; letter-spacing: 0.5px;
@@ -1536,6 +1538,7 @@ body.is-leaving { animation: pageFadeOut 0.25s ease forwards; }
   font-family: 'Space Grotesk', sans-serif;
   font-size: 14px; font-weight: 700;
   color: var(--white); line-height: 1.2; display: block;
+  -webkit-text-stroke: 0.4px currentColor;
 }
 .contact-info-logo-sub {
   font-size: 9px; font-weight: 400; letter-spacing: 0.5px;
