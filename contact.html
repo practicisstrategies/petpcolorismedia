@@ -197,12 +197,19 @@
       <!--
         CONNEXION DU FORMULAIRE
         ───────────────────────
-        Ce formulaire statique doit être connecté à un service de traitement :
+        Solution temporaire : le clic sur « Envoyer la demande » ouvre le
+        logiciel de courriel de l'utilisateur (mailto:) avec les champs
+        pré-remplis — voir js/main.js. Aucune donnée n'est envoyée si
+        l'utilisateur n'a pas de client de courriel configuré (mobile web,
+        etc.), et les pièces jointes ne sont pas supportées par mailto.
+
+        Pour une solution plus fiable, remplacer par un service de
+        traitement de formulaire :
         – Formspree : remplacez action="#" par action="https://formspree.io/f/VOTRE_ID"
-        – Netlify Forms : ajoutez l'attribut netlify sur <form>
-        – Ou redirigez vers mailto:petp@bellnet.ca via un service d'emails transactionnels.
+        – Web3Forms : action="https://api.web3forms.com/submit" + clé d'accès
+        – Netlify Forms : ajoutez l'attribut netlify sur <form> (si hébergé sur Netlify)
       -->
-      <form class="contact-form" action="#" method="POST">
+      <form class="contact-form" action="#" method="POST" id="contact-form">
 
         <div class="form-row">
           <div class="form-group">
@@ -250,7 +257,7 @@
         </div>
 
         <div class="form-file-note">
-          <strong>Envoi de fichiers :</strong> Joignez vos fichiers DXF, PDF ou AI directement à votre courriel à <a href="mailto:petp@bellnet.ca" style="color:var(--indigo);font-weight:600;">petp@bellnet.ca</a> — nous les traitons avec votre demande. Formats acceptés : DXF · PDF · AI · DWG · SVG.
+          <strong>Envoi de fichiers :</strong> Le bouton ci-dessous ouvre votre logiciel de courriel avec vos renseignements pré-remplis, à l'attention de <a href="mailto:petp@bellnet.ca" style="color:var(--indigo);font-weight:600;">petp@bellnet.ca</a> — joignez-y vos fichiers DXF, PDF ou AI avant l'envoi. Formats acceptés : DXF · PDF · AI · DWG · SVG.
         </div>
 
         <button type="submit" class="form-submit">Envoyer la demande →</button>

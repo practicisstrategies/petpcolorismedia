@@ -46,6 +46,47 @@ document.querySelectorAll('.nav-links a, .nav-drawer a').forEach(a => {
   if (a.getAttribute('href') === page) a.classList.add('active');
 });
 
+// Contact form → mailto (interim solution until a form backend is wired up)
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+  contactForm.addEventListener('submit', e => {
+    e.preventDefault();
+    if (!contactForm.checkValidity()) {
+      contactForm.reportValidity();
+      return;
+    }
+
+    const val = id => (document.getElementById(id)?.value || '').trim();
+    const materialSelect = document.getElementById('contact-material');
+    const materialLabel = (materialSelect && materialSelect.selectedOptions[0]?.text) || '';
+
+    const name = val('contact-name');
+    const company = val('contact-company');
+    const email = val('contact-email');
+    const phone = val('contact-phone');
+    const qty = val('contact-qty');
+    const desc = val('contact-desc');
+
+    const subject = `Demande de soumission — ${name}${company ? ' (' + company + ')' : ''}`;
+
+    const bodyLines = [
+      `Nom : ${name}`,
+      company && `Entreprise : ${company}`,
+      `Courriel : ${email}`,
+      phone && `Téléphone : ${phone}`,
+      `Matériau : ${materialLabel}`,
+      qty && `Épaisseur / quantité : ${qty}`,
+      '',
+      'Description du projet :',
+      desc,
+      '',
+      "N'oubliez pas de joindre vos fichiers DXF, PDF ou AI à ce courriel avant de l'envoyer."
+    ].filter(Boolean).join('\n');
+
+    window.location.href = `mailto:petp@bellnet.ca?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines)}`;
+  });
+}
+
 // Page transitions
 document.querySelectorAll('a[href]').forEach(a => {
   const href = a.getAttribute('href');
