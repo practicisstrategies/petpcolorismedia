@@ -798,6 +798,45 @@ body.is-leaving { animation: pageFadeOut 0.25s ease forwards; }
   to   { opacity: 1; transform: none; }
 }
 
+/* ── LEGAL PAGES ────────────────────────────────────────── */
+.legal-body {
+  max-width: 820px; margin: 0 auto;
+  padding: 72px 64px 100px; background: var(--white);
+}
+.legal-lang {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 12px; letter-spacing: 1px; text-transform: uppercase;
+  font-weight: 500; color: var(--muted); margin-bottom: 28px;
+}
+.legal-lang a {
+  color: var(--indigo); font-weight: 600;
+  border-bottom: 1px solid currentColor; padding-bottom: 1px;
+  transition: color .2s;
+}
+.legal-lang a:hover { color: var(--indigo-dk); }
+.legal-updated {
+  font-size: 13px; color: var(--muted); font-weight: 300;
+  padding-bottom: 28px; margin-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+.legal-body h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 19px; font-weight: 700; color: var(--black);
+  letter-spacing: -0.4px; margin: 40px 0 12px;
+}
+.legal-body p {
+  font-size: 15px; color: var(--grey); line-height: 1.85;
+  font-weight: 300; margin-bottom: 14px;
+}
+.legal-body address {
+  font-style: normal; font-size: 15px; color: var(--grey);
+  line-height: 1.85; font-weight: 300;
+}
+.legal-body a:not(.legal-lang a) { color: var(--indigo); }
+@media (max-width: 768px) {
+  .legal-body { padding: 48px 20px 72px; }
+}
+
 /* ── ABOUT PAGE ─────────────────────────────────────────── */
 
 /* Story section */
