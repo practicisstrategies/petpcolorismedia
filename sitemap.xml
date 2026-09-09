@@ -1,41 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://petpcolorismedia.com/</loc>
     <xhtml:link rel="alternate" hreflang="fr-CA" href="https://petpcolorismedia.com/"/>
     <xhtml:link rel="alternate" hreflang="en-CA" href="https://petpcolorismedia.com/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://petpcolorismedia.com/"/>
+    <image:image><image:loc>https://petpcolorismedia.com/img/Nomex.png</image:loc></image:image>
+    <image:image><image:loc>https://petpcolorismedia.com/img/Hitex.jpg</image:loc></image:image>
+    <image:image><image:loc>https://petpcolorismedia.com/img/Rubber.jpg</image:loc></image:image>
+    <image:image><image:loc>https://petpcolorismedia.com/img/Silicone.jpg</image:loc></image:image>
+    <image:image><image:loc>https://petpcolorismedia.com/img/lasercut-industry.jpeg</image:loc></image:image>
   </url>
   <url>
     <loc>https://petpcolorismedia.com/en/</loc>
     <xhtml:link rel="alternate" hreflang="fr-CA" href="https://petpcolorismedia.com/"/>
     <xhtml:link rel="alternate" hreflang="en-CA" href="https://petpcolorismedia.com/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://petpcolorismedia.com/"/>
+    <image:image><image:loc>https://petpcolorismedia.com/img/Nomex.png</image:loc></image:image>
+    <image:image><image:loc>https://petpcolorismedia.com/img/Hitex.jpg</image:loc></image:image>
+    <image:image><image:loc>https://petpcolorismedia.com/img/Rubber.jpg</image:loc></image:image>
+    <image:image><image:loc>https://petpcolorismedia.com/img/Silicone.jpg</image:loc></image:image>
+    <image:image><image:loc>https://petpcolorismedia.com/img/lasercut-industry.jpeg</image:loc></image:image>
   </url>
   <url>
     <loc>https://petpcolorismedia.com/services.html</loc>
     <xhtml:link rel="alternate" hreflang="fr-CA" href="https://petpcolorismedia.com/services.html"/>
     <xhtml:link rel="alternate" hreflang="en-CA" href="https://petpcolorismedia.com/en/services.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://petpcolorismedia.com/services.html"/>
+    <image:image><image:loc>https://petpcolorismedia.com/img/Rubber.jpg</image:loc></image:image>
+    <image:image><image:loc>https://petpcolorismedia.com/img/Hitex.jpg</image:loc></image:image>
+    <image:image><image:loc>https://petpcolorismedia.com/img/lasercut-industry.jpeg</image:loc></image:image>
   </url>
   <url>
     <loc>https://petpcolorismedia.com/en/services.html</loc>
     <xhtml:link rel="alternate" hreflang="fr-CA" href="https://petpcolorismedia.com/services.html"/>
     <xhtml:link rel="alternate" hreflang="en-CA" href="https://petpcolorismedia.com/en/services.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://petpcolorismedia.com/services.html"/>
+    <image:image><image:loc>https://petpcolorismedia.com/img/Rubber.jpg</image:loc></image:image>
+    <image:image><image:loc>https://petpcolorismedia.com/img/Hitex.jpg</image:loc></image:image>
+    <image:image><image:loc>https://petpcolorismedia.com/img/lasercut-industry.jpeg</image:loc></image:image>
   </url>
   <url>
     <loc>https://petpcolorismedia.com/materiaux.html</loc>
     <xhtml:link rel="alternate" hreflang="fr-CA" href="https://petpcolorismedia.com/materiaux.html"/>
     <xhtml:link rel="alternate" hreflang="en-CA" href="https://petpcolorismedia.com/en/materiaux.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://petpcolorismedia.com/materiaux.html"/>
+    <image:image><image:loc>https://petpcolorismedia.com/img/Nomex.png</image:loc></image:image>
+    <image:image><image:loc>https://petpcolorismedia.com/img/Hitex.jpg</image:loc></image:image>
+    <image:image><image:loc>https://petpcolorismedia.com/img/Rubber.jpg</image:loc></image:image>
+    <image:image><image:loc>https://petpcolorismedia.com/img/Silicone.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://petpcolorismedia.com/en/materiaux.html</loc>
     <xhtml:link rel="alternate" hreflang="fr-CA" href="https://petpcolorismedia.com/materiaux.html"/>
     <xhtml:link rel="alternate" hreflang="en-CA" href="https://petpcolorismedia.com/en/materiaux.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://petpcolorismedia.com/materiaux.html"/>
+    <image:image><image:loc>https://petpcolorismedia.com/img/Nomex.png</image:loc></image:image>
+    <image:image><image:loc>https://petpcolorismedia.com/img/Hitex.jpg</image:loc></image:image>
+    <image:image><image:loc>https://petpcolorismedia.com/img/Rubber.jpg</image:loc></image:image>
+    <image:image><image:loc>https://petpcolorismedia.com/img/Silicone.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://petpcolorismedia.com/industries.html</loc>
