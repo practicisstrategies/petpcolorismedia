@@ -99,9 +99,13 @@ if (contactForm) {
       "N'oubliez pas de joindre vos fichiers DXF, PDF ou AI à ce courriel avant de l'envoyer."
     ].filter(Boolean).join('\n');
 
-    window.location.href = `mailto:petp@bellnet.ca?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines)}`;
+    window.location.href = `mailto:production@petpcolorismedia.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines)}`;
   });
 }
+
+// Dynamic copyright year (falls back to the hardcoded year if JS is off)
+const currentYear = new Date().getFullYear();
+document.querySelectorAll('.js-year').forEach(el => { el.textContent = currentYear; });
 
 // Page transitions
 document.querySelectorAll('a[href]').forEach(a => {
